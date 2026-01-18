@@ -173,21 +173,165 @@
             color: #CE1126 !important;
             font-weight: 800 !important;
         }
+        /* ======== NAV RESPONSIVE (بدون تغيير structure) ======== */
+
+/* نخلي navbar flex في نفس السطر في الديسكتوب */
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap; /* إذا طولت الروابط ما تكسرش الصفحة */
+}
+
+/* container داخلي للروابط */
+.nav-shell {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  min-width: 0;
+}
+
+/* أخفي checkbox */
+.nav-toggle{
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* زرّ القائمة (burger) مخفي في desktop */
+.nav-btn{
+  display: none;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid rgba(0,0,0,0.08);
+  background: rgba(255,255,255,0.85);
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-weight: 800;
+  color: #2d3436;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+  white-space: nowrap;
+}
+
+/* dropdown mobile */
+.nav-mobile{
+  display: none;
+  width: 100%;
+  padding: 0 12px 12px;
+}
+
+.nav-mobile a{
+  display: block;
+  text-decoration: none;
+  color: #2d3436;
+  font-weight: 800;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(118, 75, 162, 0.06);
+  margin-top: 10px;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.nav-mobile a:hover{
+  background: rgba(206, 17, 38, 0.08);
+  color: #CE1126;
+}
+
+/* وقتلي الـ checkbox يتعلّم، افتح القائمة */
+.nav-toggle:checked ~ .nav-mobile{
+  display: block;
+}
+
+/* تحسين scroll للـ nav-inner */
+.nav-inner{
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+.nav-inner::-webkit-scrollbar{ height: 6px; }
+.nav-inner::-webkit-scrollbar-thumb{
+  background: rgba(0,0,0,0.18);
+  border-radius: 999px;
+}
+
+/* ======== Responsive content tweaks ======== */
+@media (max-width: 992px){
+  body{ padding: 14px; }
+  .content{ padding: 28px 18px; }
+  .header{ padding: 32px 18px; }
+}
+
+@media (max-width: 768px){
+  body{ padding: 12px; }
+
+  /* navbar: نبدّل للـ burger */
+  .nav-inner{ display: none; }
+  .nav-btn{ display: inline-flex; align-items: center; gap: 8px; }
+  .nav-shell{ justify-content: flex-start; }
+
+  /* container full width في الموبايل */
+  .container{ border-radius: 0; }
+
+  .header h1{ font-size: 1.45em; }
+  .header p{ font-size: 1em; }
+
+  .content{ padding: 18px 14px; }
+
+  .section{
+    padding: 16px;
+    margin-bottom: 18px;
+  }
+
+  .section h2{ font-size: 1.25em; }
+  .section h3{ font-size: 1.1em; }
+
+  .section ul{ margin-right: 14px; }
+
+  /* خفّف hover effect في الموبايل (باش ما يزحلقش) */
+  .section:hover{ transform: none; }
+}
+
+@media (max-width: 420px){
+  .header h1{ font-size: 1.25em; }
+  .info-box{ padding: 14px; }
+  .highlight{ padding: 12px; }
+}
+
     </style>
 </head>
 <body>
+ <!-- NAVBAR Responsive -->
+ <nav class="navbar">
+  <a class="brand" href="index.html" style="display:inline-block; padding:12px 14px;">🇹🇳 Accueil</a>
 
-    <nav class="navbar">
-        <div class="nav-inner">
-            <a class="brand" href="index.html">🇹🇳 Accueil</a>
+  <!-- checkbox لازم يكون sibling للـ nav-mobile -->
+  <input class="nav-toggle" id="nav-toggle" type="checkbox" />
 
-            <a href="index.html">الدستور 2022</a>
-            <a href="tunisia_constitution_comparison.html">مقارنة الدساتير</a>
-            <a href="tunisian_associations.html">تنظيم-الجمعيات</a>
-            <a href="tunisian_admin_summary.html">لتنظيم الإداري</a>
-            <a href="statut-fonctionnaires-tunisie.html"> النظام الأساسي العام لأعوان الدولة</a>
-        </div>
-    </nav>
+  <div class="nav-shell">
+    <!-- burger (mobile) -->
+    <label class="nav-btn" for="nav-toggle">☰ قائمة المحاور </label>
+
+    <!-- desktop links -->
+    <div class="nav-inner" aria-label="navigation">
+      <a href="index.html">الدستور 2022</a>
+      <a href="tunisia_constitution_comparison.html">مقارنة الدساتير</a>
+      <a href="tunisian_associations.html">تنظيم-الجمعيات</a>
+      <a href="tunisian_admin_summary.html">لتنظيم الإداري</a>
+      <a href="statut-fonctionnaires-tunisie.html">النظام الأساسي العام لأعوان الدولة</a>
+    </div>
+  </div>
+
+  <!-- mobile dropdown (سِبْلينغ للـ input) -->
+  <div class="nav-mobile" aria-label="navigation mobile">
+    <a href="index.html">الدستور 2022</a>
+    <a href="tunisia_constitution_comparison.html">مقارنة الدساتير</a>
+    <a href="tunisian_associations.html">تنظيم-الجمعيات</a>
+    <a href="tunisian_admin_summary.html">لتنظيم الإداري</a>
+    <a href="statut-fonctionnaires-tunisie.html">النظام الأساسي العام لأعوان الدولة</a>
+  </div>
+</nav>
+
 
     <div class="container">
         <div class="header">
