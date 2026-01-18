@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دستور الجمهورية التونسية 2022</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; line-height: 1.8; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); overflow: hidden; }
+        .header { background: linear-gradient(135deg, #CE1126 0%, #CE1126 100%); color: white; padding: 40px; text-align: center; position: relative; overflow: hidden; }
+        .header::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.05) 10px, rgba(255,255,255,0.05) 20px); animation: slide 20s linear infinite; }
+        @keyframes slide { 0% { transform: translate(0, 0); } 100% { transform: translate(50px, 50px); } }
+        .header h1 { font-size: 2.5em; margin-bottom: 10px; position: relative; z-index: 1; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+        .header .date { font-size: 1.2em; opacity: 0.9; position: relative; z-index: 1; }
+        .content { padding: 40px; }
+        .intro { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 30px; border-radius: 15px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+        .section { margin-bottom: 30px; background: #f8f9fa; border-radius: 15px; padding: 25px; border-right: 5px solid #CE1126; transition: transform 0.3s; }
+        .section:hover { transform: translateX(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+        .section h3 { color: #CE1126; font-size: 1.5em; margin-bottom: 15px; padding-bottom: 10px; border-bottom: 2px solid #CE1126; }
+        .section h4 { color: #764ba2; font-size: 1.3em; margin: 20px 0 10px 0; }
+        .section ul { list-style: none; padding-right: 0; }
+        .section li { padding: 12px 0; padding-right: 25px; position: relative; border-bottom: 1px solid #e0e0e0; }
+        .section li::before { content: '◆'; color: #CE1126; position: absolute; right: 0; font-weight: bold; }
+        .qcm { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .qcm h4 { color: #2d3436; margin-bottom: 10px; }
+        .qcm-q { background: white; padding: 15px; margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .ok { color: #00b894; font-weight: bold; }
+        .no { color: #d63031; font-weight: bold; }
+        .warn { background: #fff3cd; border-right: 4px solid #ffc107; padding: 15px; border-radius: 8px; margin: 15px 0; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 20px 0; }
+        .card { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 3px solid #CE1126; transition: transform 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card h4 { color: #CE1126; margin-bottom: 10px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; border-radius: 10px; overflow: hidden; }
+        th { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 15px; text-align: right; }
+        td { padding: 15px; border-bottom: 1px solid #e0e0e0; }
+
+        .tips { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: white; padding: 25px; border-radius: 15px; margin: 30px 0; }
+        .tips h3 { margin-bottom: 15px; }
+        .footer { background: #2d3436; color: white; text-align: center; padding: 20px; }
+        .sum { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 25px; border-radius: 15px; margin: 25px 0; }
+        .sum table { margin-top: 15px; }
+        .sum td { border-bottom: 1px solid rgba(255,255,255,0.2); }
+        .powers-summary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+        }
+        
+        .powers-summary table {
+            width: 100%;
+            margin-top: 15px;
+        }
+        
+        .powers-summary td {
+            padding: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .powers-summary td:first-child {
+            font-weight: bold;
+        }
+
+        
+        .qcm-box {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-right: 4px solid #667eea;
+        }
+        
+        .qcm-box h4 {
+            color: #2d3436;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        
+        .qcm-question {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+         .correct {
+            color: #00b894;
+            font-weight: bold;
+        }
+        
+        .wrong {
+            color: #d63031;
+            font-weight: bold;
+        }
+
+        .highlight {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-right: 4px solid #ff6b6b;
+        }
+        
+        .highlight h4 {
+            color: #d63031;
+            margin-bottom: 10px;
+            font-size: 1.3em;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🇹🇳 دستور الجمهورية التونسية</h1>
+            <div class="date">25 جويلية 2022</div>
+        </div>
+        
+        <div class="content">
+            <div class="intro">
+                <h2>نبذة عن الدستور</h2>
+                <p>تم إقرار هذا الدستور بعد استفتاء شعبي يوم 25 يوليو 2022، ويؤسس لنظام دستوري جديد قائم على دولة القانون والفصل بين السلطات.</p>
+            </div>
+
+            <div class="section">
+                <h3>📜 المبادئ العامة (الباب الأول)</h3>
+                <ul>
+                    <li>تونس دولة حرة مستقلة ذات سيادة (فصل 1)</li>
+                    <li>النظام جمهوري (فصل 2)</li>
+                    <li><strong>الشعب صاحب السيادة</strong> ويمارسها عبر الدستور (فصل 3)</li>
+                    <li>تونس دولة موحدة لا يجوز المساس بوحدتها (فصل 4)</li>
+                    <li>تونس جزء من الأمة الإسلامية (الدولة تعمل على مقاصد الإسلام)</li>
+                    <li>تونس جزء من الأمة العربية والمغرب العربي</li>
+                    <li>اللغة الرسمية: العربية</li>
+                    <li><strong>شعار الدولة: حرية – نظام – عدالة</strong></li>
+                    <li>الثروات الطبيعية ملك للشعب وتوزع بالعدل</li>
+                </ul>
+                <div class="qcm">
+                    <h4>👉 QCM شائعة:</h4>
+                    <div class="qcm-q"><strong>من صاحب السيادة؟</strong><br><span class="ok">✔ الشعب</span></div>
+                    <div class="qcm-q"><strong>هل تونس دولة دينية؟</strong><br><span class="no">❌ لا</span> (لكنها جزء من الأمة الإسلامية)</div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>👥 الحقوق والحريات ⭐</h3>
+                <h4>🔹 حقوق أساسية:</h4>
+                <ul>
+                    <li><strong>المساواة بين المواطنين</strong> دون تمييز</li>
+                    <li><strong>الحق في الحياة</strong> (مقدس)</li>
+                    <li><strong>منع التعذيب</strong> (لا يسقط بالتقادم)</li>
+                    <li>حرية الفرد، المعتقد، الضمير</li>
+                    <li><strong>حرية الرأي والتعبير والإعلام</strong> (دون رقابة مسبقة)</li>
+                    <li>قرينة البراءة</li>
+                    <li>محاكمة عادلة</li>
+                    <li>حرمة الحياة الخاصة والمعطيات الشخصية</li>
+                    <li>حرية التنقل وعدم سحب الجنسية</li>
+                </ul>
+                
+                <h4>🔹 حقوق اجتماعية:</h4>
+                <ul>
+                    <li>الصحة</li>
+                    <li><strong>التعليم الإجباري إلى 16 سنة</strong></li>
+                    <li>العمل</li>
+                    <li>بيئة سليمة</li>
+                    <li>الماء</li>
+                    <li>الثقافة والرياضة</li>
+                </ul>
+                
+                <h4>🔹 المرأة والطفل:</h4>
+                <ul>
+                    <li>حماية حقوق المرأة</li>
+                    <li>تكافؤ الفرص</li>
+                    <li>السعي إلى التناصف</li>
+                    <li>حماية الطفل وذوي الإعاقة والمسنين</li>
+                </ul>
+                <div class="qcm">
+                    <div class="qcm-q"><strong>هل يجوز تقييد الحقوق؟</strong><br><span class="ok">✔ نعم بقانون ودون المساس بجوهر الحق</span></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>🏛️ السلطة التشريعية</h3>
+                <div class="warn"><strong>⚠️ مهم:</strong> تتكون من مجلسين</div>
+                <div class="grid">
+                    <div class="card">
+                        <h4>🔵 مجلس نواب الشعب</h4>
+                        <p><strong>التمثيل:</strong> شعبي مباشر</p>
+                        <p><strong>المدة:</strong> 5 سنوات</p>
+                        <p><strong>الصلاحيات:</strong></p>
+                        <ul style="list-style: disc; padding-right: 20px;">
+                            <li>سن القوانين</li>
+                            <li>المصادقة على المعاهدات والميزانية</li>
+                            <li>مساءلة الحكومة</li>
+                            <li>لائحة لوم</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4>🟣 المجلس الوطني للجهات والأقاليم</h4>
+                        <p><strong>التمثيل:</strong> جهوي (غير مباشر)</p>
+                        <p><strong>الانتخاب:</strong> لا (تعيين)</p>
+                        <p><strong>الدور:</strong> التوازن الجهوي والتنمية</p>
+                        <p><strong>الصلاحيات:</strong></p>
+                        <ul style="list-style: disc; padding-right: 20px;">
+                            <li>القوانين الجهوية</li>
+                            <li>المصادقة على قانون المالية</li>
+                            <li>المخططات التنموية</li>
+                            <li>لائحة لوم</li>
+                        </ul>
+                    </div>
+                </div>
+                 <h4>📋 مقارنة سريعة (مهمة للـ QCM):</h4>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>العنصر</th>
+                            <th>مجلس نواب الشعب</th>
+                            <th>مجلس الجهات والأقاليم</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>التمثيل</strong></td>
+                            <td>شعبي مباشر</td>
+                            <td>جهوي</td>
+                        </tr>
+                        <tr>
+                            <td><strong>الدور</strong></td>
+                            <td>تشريعي عام</td>
+                            <td>تنموي جهوي</td>
+                        </tr>
+                        <tr>
+                            <td><strong>انتخاب</strong></td>
+                            <td>نعم</td>
+                            <td>لا</td>
+                        </tr>
+                        <tr>
+                            <td><strong>الميزانية</strong></td>
+                            <td>يصادق</td>
+                            <td>يشارك</td>
+                        </tr>
+                        <tr>
+                            <td><strong>لائحة لوم</strong></td>
+                            <td>نعم</td>
+                            <td>نعم</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="warn"><strong>⚠️ فخ:</strong> المجلس الوطني <span class="no">مش نواب ثاني ❌</span> بل <span class="ok">تمثيل جهوي ✔</span></div>
+                <div class="qcm-box">
+                    <h4>❓ QCM شائعة جدًا:</h4>
+                    <div class="qcm-question">
+                        <strong>عدد المجالس التشريعية؟</strong><br>
+                        <span class="correct">✔ مجلسان</span>
+                    </div>
+                    <div class="qcm-question">
+                        <strong>هل المجلس الوطني منتخب مباشرة؟</strong><br>
+                        <span class="wrong">❌ لا</span>
+                    </div>
+                    <div class="qcm-question">
+                        <strong>دوره الأساسي؟</strong><br>
+                        <span class="correct">✔ التوازن الجهوي</span>
+                    </div>
+                    <div class="qcm-question">
+                        <strong>يضبط السياسة الخارجية؟</strong><br>
+                        <span class="wrong">❌ لا</span>
+                    </div>
+                    <div class="qcm-question">
+                        <strong>مدة النيابة؟</strong><br>
+                        <span class="correct">✔ 5 سنوات</span>
+                    </div>
+                </div>
+
+                <div class="highlight">
+                    <h4>⚠️ فخاخ مناظرات:</h4>
+                    <ul>
+                        <li>مجلس ثاني ≠ مجلس نواب ثاني</li>
+                        <li>تنمية ≠ سياسة سيادية</li>
+                        <li>كلمة "يضبط" → رئيس الجمهورية</li>
+                        <li>ما تنجمش الحكومة تشرع وحدها ❌</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>⚙️ السلطة التنفيذية</h3>
+                <p style="font-size: 1.1em; margin-bottom: 20px;"><strong>شكونها؟</strong> هي السلطة اللي تطبق القوانين وتسير شؤون الدولة.</p>
+
+                <div class="warn"><strong>📌 النظام السياسي:</strong> نظام رئاسي مع برلمان من مجلسين، يتمتع فيه رئيس الجمهورية بصلاحيات واسعة</div>
+                <div class="grid">
+                    <div class="card">
+                        <h4>🎖️ رئيس الجمهورية</h4>
+                        <p><strong>المدة:</strong> 5 سنوات (ولايتين)</p>
+                        <hr style="margin: 10px 0; border: none; border-top: 1px solid #e0e0e0;">
+                        <p><strong>الصلاحيات الواسعة:</strong></p>
+                        <ul style="list-style: disc; padding-right: 20px;">
+                            <li><strong>القائد الأعلى للقوات المسلحة</strong></li>
+                            <li><strong>يضبط السياسة العامة للدولة ويسهر على تنفيذها</strong></li>
+                            <li>يعين رئيس الحكومة والوزراء وبقية أعضاء الحكومة وينهي مهامهم</li>
+                            <li>يصدر القوانين ويمكنه ردّها إلى البرلمان</li>
+                            <li>يعلن حالة الطوارئ في الظروف الاستثنائية</li>
+                            <li>يعقد المعاهدات الدولية</li>
+                            <li>يمارس حق العفو الخاص</li>
+                            <li>يتمتع بالحصانة أثناء توليه الرئاسة</li>  
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4>👔 الحكومة</h4>
+                        <p><strong>تتكون من:</strong> رئيس الحكومة + الوزراء</p>
+                        <hr style="margin: 15px 0; border: none; border-top: 1px solid #e0e0e0;">
+                        <ul style="list-style: disc; padding-right: 20px;">
+                            <li>تساعد رئيس الجمهورية</li>
+                            <li><strong>مسؤولة أمام رئيس الجمهورية</strong> (مش البرلمان)</li>
+                            <li>تنفذ السياسة العامة</li>
+                            <li>تسير الإدارة</li>
+                            <li>تطبق القوانين</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="qcm">
+                    <div class="qcm-q"><strong>شكون يضبط السياسة العامة؟</strong> <span class="ok">✔ رئيس الجمهورية</span></div>
+                    <div class="qcm-q">
+                        <strong>شكون يعين الحكومة؟</strong><br>
+                        <span class="correct">✔ رئيس الجمهورية</span>
+                    </div>
+                    <div class="qcm-q"><strong>الحكومة مسؤولة أمام البرلمان؟</strong> <span class="no">❌ لا، أمام الرئيس</span></div>
+                </div>
+            </div>
+
+             <div class="section">
+                <h3>⚖️ السلطة القضائية (الباب الخامس)</h3>
+                
+                <p style="font-size: 1.1em; margin-bottom: 20px;"><strong>شكونها؟</strong> هي السلطة اللي تحكم وتفصل في النزاعات وتطبق القانون بعدل.</p>
+                
+                <h4>🔹 خصائصها:</h4>
+                <ul>
+                    <li><strong>قضاء مستقل</strong></li>
+                    <li>القاضي <strong>لا يعزل ولا ينقل</strong> دون رضاه إلا بالقانون</li>
+                    <li><strong>الأحكام تصدر باسم الشعب</strong></li>
+                    <li>المحاكمة عادلة وعلى درجتين</li>
+                </ul>
+                
+                <h4>🔹 تتكون من:</h4>
+                <ul>
+                    <li>القضاء العدلي</li>
+                    <li>القضاء الإداري</li>
+                    <li>القضاء المالي</li>
+                </ul>
+                
+                <div class="qcm-box">
+                    <h4>👉 نقاط QCM:</h4>
+                    <div class="qcm-question">
+                        <strong>القضاء مستقل؟</strong><br>
+                        <span class="correct">✔ نعم</span>
+                    </div>
+                    <div class="qcm-question">
+                        <strong>الأحكام تصدر باسم؟</strong><br>
+                        <span class="correct">✔ الشعب</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="section">
+                <h3>🏛️ الهيئات الدستورية المستقلة</h3>
+                <div class="grid">
+                    <div class="card">
+                        <h4>⚖️ المحكمة الدستورية</h4>
+                        <ul style="list-style: disc; padding-right: 20px;">
+                            <li><strong>9 أعضاء</strong></li>
+                            <li>تراقب دستورية:
+                        <ul style="list-style: circle; padding-right: 40px; margin-top: 10px;">
+                            <li>القوانين</li>
+                            <li>المعاهدات</li>
+                            <li>النظام الداخلي للمجالس</li>
+                        </ul>
+                    </li>
+                            <li>قراراتها ملزمة للجميع</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4>🗳️ الهيئة العليا المستقلة للانتخابات</h4>
+                        <p>تنظم وتشرف على الانتخابات والاستفتاءات</p>
+                    </div>
+                    <div class="card">
+                        <h4>👤 هيئة حقوق الإنسان</h4>
+                        <p>تحمي وتعزز حقوق الإنسان والحريات الأساسية</p>
+                    </div>
+                    <div class="card">
+                        <h4>🌱 هيئة التنمية المستدامة</h4>
+                        <p>تحمي حقوق الأجيال القادمة والبيئة</p>
+                    </div>
+                    <div class="card">
+                        <h4>🛡️ هيئة الحوكمة الرشيدة</h4>
+                        <p>مكافحة الفساد وتعزيز الشفافية</p>
+                    </div>
+                </div>
+                <div class="qcm">
+                    <div class="qcm-q"><strong>عدد أعضاء المحكمة الدستورية؟</strong> <span class="ok">✔ 9</span></div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3>🏘️ السلطة المحلية</h3>
+                <ul>
+                    <li><strong>تقوم على اللامركزية</strong></li>
+                    <li>المجالس المحلية تنتخب بالاقتراع العام</li>
+                    <li>تتمتع الجماعات المحلية بالاستقلالية الإدارية والمالية</li>
+                    <li>تساهم في التنمية المحلية وتحسين الخدمات</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h3>📋 تعديل الدستور</h3>
+                <ul>
+                    <li><strong>المبادرة:</strong> من رئيس الجمهورية أو ثلث أعضاء مجلس نواب الشعب</li>
+                    <li><strong>الموافقة:</strong> أغلبية خاصة من البرلمان أو استفتاء شعبي</li>
+                </ul>
+            </div>
+
+            <div class="powers-summary">
+                <h3>🧠 خلاصة السلطات:</h3>
+                <table>
+                    <tr><td>التشريعية</td><td>تعمل القوانين</td><td>مجلسين</td></tr>
+                    <tr><td>التنفيذية</td><td>تطبق القوانين</td><td>رئيس + حكومة</td></tr>
+                    <tr><td>القضائية</td><td>تحكم بالعدل</td><td>قضاة</td></tr>
+                </table>
+            </div>
+
+            <div class="tips">
+                <h3>🔴 نصائح ذهبية لـ QCM:</h3>
+                <ul>
+                    <li>✓ احفظ الأعداد: 5 سنوات - 9 أعضاء - مجلسين</li>
+                    <li>✓ فرّق: يشرّع ≠ ينفذ ≠ يحكم</li>
+                    <li>✓ يضبط السياسة → رئيس الجمهورية</li>
+                    <li>✓ انتبه لـ "دائمًا" و "أبدًا"</li>
+                    <li>✓ مجلس ثاني ≠ مجلس نواب ثاني</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>🇹🇳 دستور الجمهورية التونسية - 25 جويلية 2022 🇹🇳</p>
+        </div>
+    </div>
+</body>
+</html>
