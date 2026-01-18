@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقارنة دستور الجمهورية التونسية 2014 و 2022</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ce1126 0%, #e70013 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .comparison-section {
+            padding: 30px;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .constitution-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            border: 3px solid;
+            transition: transform 0.3s ease;
+        }
+
+        .constitution-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-2014 {
+            border-color: #4CAF50;
+        }
+
+        .card-2022 {
+            border-color: #2196F3;
+        }
+
+        .card-header {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid;
+        }
+
+        .card-2014 .card-header {
+            color: #4CAF50;
+            border-color: #4CAF50;
+        }
+
+        .card-2022 .card-header {
+            color: #2196F3;
+            border-color: #2196F3;
+        }
+
+        .topic {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .topic-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #ffeaa7;
+            border-right: 4px solid #fdcb6e;
+            border-radius: 5px;
+        }
+
+        .point {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            line-height: 1.6;
+        }
+
+        .point::before {
+            content: "◆ ";
+            color: #e74c3c;
+            font-weight: bold;
+        }
+
+        .key-differences {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .key-differences h2 {
+            color: #856404;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        .difference-item {
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-right: 4px solid #ffc107;
+        }
+
+        @media (max-width: 768px) {
+            .comparison-grid {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🇹🇳 مقارنة دستور الجمهورية التونسية</h1>
+            <div class="subtitle">دستور 2014 مقابل دستور 2022</div>
+        </header>
+
+        <div class="comparison-section">
+            <div class="comparison-grid">
+                <div class="constitution-card card-2014">
+                    <div class="card-header">دستور 2014</div>
+                    <div class="point">صدر بعد الثورة التونسية</div>
+                    <div class="point">نظام برلماني شبه رئاسي</div>
+                    <div class="point">فصل واضح للسلطات</div>
+                    <div class="point">دور قوي للبرلمان (مجلس نواب الشعب)</div>
+                    <div class="point">رئيس الحكومة له صلاحيات تنفيذية واسعة</div>
+                </div>
+
+                <div class="constitution-card card-2022">
+                    <div class="card-header">دستور 2022</div>
+                    <div class="point">صدر في عهد الرئيس قيس سعيّد</div>
+                    <div class="point">نظام رئاسي مُعزَّز</div>
+                    <div class="point">تركيز السلطة في يد الرئيس</div>
+                    <div class="point">دور محدود للبرلمان</div>
+                    <div class="point">الرئيس يرأس السلطة التنفيذية مباشرة</div>
+                </div>
+            </div>
+
+            <div class="topic">
+                <div class="topic-title">🏛️ طبيعة النظام السياسي</div>
+                <div class="comparison-grid">
+                    <div>
+                        <strong style="color: #4CAF50;">دستور 2014:</strong>
+                        <div class="point">نظام شبه برلماني</div>
+                        <div class="point">توزيع السلطة بين المؤسسات</div>
+                    </div>
+                    <div>
+                        <strong style="color: #2196F3;">دستور 2022:</strong>
+                        <div class="point">نظام رئاسي واضح</div>
+                        <div class="point">تركيز السلطة بيد الرئيس</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic">
+                <div class="topic-title">👤 رئيس الجمهورية</div>
+                <div class="comparison-grid">
+                    <div>
+                        <strong style="color: #4CAF50;">دستور 2014:</strong>
+                        <div class="point">صلاحيات محدودة</div>
+                        <div class="point">يتقاسم السلطة مع الحكومة والبرلمان</div>
+                        <div class="point">يتولى الدفاع والعلاقات الخارجية</div>
+                    </div>
+                    <div>
+                        <strong style="color: #2196F3;">دستور 2022:</strong>
+                        <div class="point">يتمتع بصلاحيات واسعة ومركزية</div>
+                        <div class="point">يسيطر على السلطة التنفيذية</div>
+                        <div class="point">يرأس الحكومة ويعين أعضاءها</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic">
+                <div class="topic-title">🏢 رئيس الحكومة</div>
+                <div class="comparison-grid">
+                    <div>
+                        <strong style="color: #4CAF50;">دستور 2014:</strong>
+                        <div class="point">يختاره الحزب/الأغلبية البرلمانية</div>
+                        <div class="point">يمنحه البرلمان الثقة</div>
+                        <div class="point">يتولى السياسة العامة للدولة</div>
+                    </div>
+                    <div>
+                        <strong style="color: #2196F3;">دستور 2022:</strong>
+                        <div class="point">يعينه رئيس الجمهورية مباشرة</div>
+                        <div class="point">دوره تنفيذي محدود</div>
+                        <div class="point">تابع لرئيس الجمهورية</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic">
+                <div class="topic-title">🏛️ البرلمان</div>
+                <div class="comparison-grid">
+                    <div>
+                        <strong style="color: #4CAF50;">دستور 2014:</strong>
+                        <div class="point">مجلس واحد: مجلس نواب الشعب</div>
+                        <div class="point">صلاحيات تشريعية ورقابية قوية</div>
+                        <div class="point">دور مركزي في النظام السياسي</div>
+                    </div>
+                    <div>
+                        <strong style="color: #2196F3;">دستور 2022:</strong>
+                        <div class="point">مجلسان: مجلس نواب الشعب + المجلس الوطني للجهات والأقاليم</div>
+                        <div class="point">صلاحيات محدودة</div>
+                        <div class="point">دور ثانوي في النظام</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic">
+                <div class="topic-title">✅ منح الثقة للحكومة</div>
+                <div class="comparison-grid">
+                    <div>
+                        <strong style="color: #4CAF50;">دستور 2014:</strong>
+                        <div class="point">البرلمان يمنح الثقة للحكومة</div>
+                        <div class="point">الحكومة منبثقة عن الأغلبية البرلمانية</div>
+                        <div class="point">رقابة برلمانية فعّالة</div>
+                    </div>
+                    <div>
+                        <strong style="color: #2196F3;">دستور 2022:</strong>
+                        <div class="point">رئيس الجمهورية يعين الحكومة مباشرة</div>
+                        <div class="point">دور البرلمان محدود جداً</div>
+                        <div class="point">الحكومة مسؤولة أمام الرئيس</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic">
+                <div class="topic-title">❌ سحب الثقة من الحكومة</div>
+                <div class="comparison-grid">
+                    <div>
+                        <strong style="color: #4CAF50;">دستور 2014:</strong>
+                        <div class="point">البرلمان يمكنه إسقاط الحكومة</div>
+                        <div class="point">عبر لائحة لوم بأغلبية مطلقة</div>
+                        <div class="point">آلية رقابة فعّالة</div>
+                    </div>
+                    <div>
+                        <strong style="color: #2196F3;">دستور 2022:</strong>
+                        <div class="point">شبه مستحيل عملياً</div>
+                        <div class="point">الحكومة تحت سلطة الرئيس</div>
+                        <div class="point">رقابة برلمانية ضعيفة</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic">
+                <div class="topic-title">⚖️ القضاء واستقلاليته</div>
+                <div class="comparison-grid">
+                    <div>
+                        <strong style="color: #4CAF50;">دستور 2014:</strong>
+                        <div class="point">القضاء مستقل تماماً</div>
+                        <div class="point">المجلس الأعلى للقضاء منتخب</div>
+                        <div class="point">لا تدخل من السلطة التنفيذية</div>
+                    </div>
+                    <div>
+                        <strong style="color: #2196F3;">دستور 2022:</strong>
+                        <div class="point">الرئيس يرأس المجلس الأعلى للقضاء</div>
+                        <div class="point">الرئيس يتدخل في التعيينات القضائية</div>
+                        <div class="point">تقليص استقلالية القضاء</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic">
+                <div class="topic-title">📜 الحقوق والحريات</div>
+                <div class="comparison-grid">
+                    <div>
+                        <strong style="color: #4CAF50;">دستور 2014:</strong>
+                        <div class="point">مضمونة بوضوح</div>
+                        <div class="point">لا تُقيّد إلا بقانون وبشروط صارمة</div>
+                        <div class="point">حماية قوية للحريات الفردية والعامة</div>
+                    </div>
+                    <div>
+                        <strong style="color: #2196F3;">دستور 2022:</strong>
+                        <div class="point">مضمونة نظرياً</div>
+                        <div class="point">يمكن تقييدها "بما تقتضيه المصلحة العامة"</div>
+                        <div class="point">هامش أوسع لتقييد الحريات</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic">
+                <div class="topic-title">⚖️ التوازن بين السلطات</div>
+                <div class="comparison-grid">
+                    <div>
+                        <strong style="color: #4CAF50;">دستور 2014:</strong>
+                        <div class="point">توازن ورقابة متبادلة</div>
+                        <div class="point">فصل واضح بين السلطات الثلاث</div>
+                        <div class="point">نظام الضوابط والتوازنات فعّال</div>
+                    </div>
+                    <div>
+                        <strong style="color: #2196F3;">دستور 2022:</strong>
+                        <div class="point">تركيز السلطة بيد الرئيس</div>
+                        <div class="point">ضعف الرقابة المتبادلة</div>
+                        <div class="point">هيمنة السلطة التنفيذية</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topic">
+                <div class="topic-title">📝 تعديل الدستور</div>
+                <div class="comparison-grid">
+                    <div>
+                        <strong style="color: #4CAF50;">دستور 2014:</strong>
+                        <div class="point">إجراءات معقدة ومحكمة</div>
+                        <div class="point">مشاركة فعّالة للبرلمان</div>
+                        <div class="point">ضمانات لعدم تعديله بسهولة</div>
+                    </div>
+                    <div>
+                        <strong style="color: #2196F3;">دستور 2022:</strong>
+                        <div class="point">أسهل نسبياً</div>
+                        <div class="point">نفوذ أكبر للرئيس في التعديل</div>
+                        <div class="point">دور أقل للبرلمان</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="key-differences">
+                <h2>🔑 خلاصة سريعة للحفظ</h2>
+                <div class="difference-item" style="background: #d4edda; border-right: 4px solid #28a745;">
+                    <strong>📌 دستور 2014:</strong> توزيع السلطة + برلمان قوي + حكومة منبثقة عن البرلمان
+                </div>
+                <div class="difference-item" style="background: #cce5ff; border-right: 4px solid #004085;">
+                    <strong>📌 دستور 2022:</strong> تركيز السلطة بيد الرئيس + برلمان بدور أضعف + نظام رئاسي
+                </div>
+            </div>
+
+            <div class="key-differences" style="background: #f8d7da; border-color: #dc3545;">
+                <h2>⚠️ الفخّ الشائع في QCM</h2>
+                <div class="difference-item" style="background: white;">
+                    <strong>❗ السؤال الخادع:</strong> من يعيّن الحكومة ومن يمنحها الثقة؟
+                </div>
+                <div class="difference-item" style="background: #d4edda;">
+                    <strong>✅ دستور 2014:</strong> البرلمان يمنح الثقة - الحكومة منبثقة عن الأغلبية البرلمانية
+                </div>
+                <div class="difference-item" style="background: #cce5ff;">
+                    <strong>✅ دستور 2022:</strong> الرئيس يعيّن الحكومة مباشرة - دور البرلمان ثانوي جداً
+                </div>
+            </div>
+
+            <div class="key-differences">
+                <h2>🎯 الفروقات الجوهرية</h2>
+                <div class="difference-item">
+                    <strong>١. النظام السياسي:</strong> شبه برلماني (2014) ← رئاسي واضح (2022)
+                </div>
+                <div class="difference-item">
+                    <strong>٢. صلاحيات الرئيس:</strong> محدودة ومشتركة (2014) ← واسعة ومركزية (2022)
+                </div>
+                <div class="difference-item">
+                    <strong>٣. تعيين الحكومة:</strong> من البرلمان (2014) ← من الرئيس مباشرة (2022)
+                </div>
+                <div class="difference-item">
+                    <strong>٤. سحب الثقة:</strong> ممكن بلائحة لوم (2014) ← شبه مستحيل (2022)
+                </div>
+                <div class="difference-item">
+                    <strong>٥. استقلال القضاء:</strong> مستقل تماماً (2014) ← تدخل الرئيس (2022)
+                </div>
+                <div class="difference-item">
+                    <strong>٦. البرلمان:</strong> مجلس واحد قوي (2014) ← مجلسان بدور محدود (2022)
+                </div>
+                <div class="difference-item">
+                    <strong>٧. الحقوق والحريات:</strong> محمية بضمانات صارمة (2014) ← قابلة للتقييد "للمصلحة العامة" (2022)
+                </div>
+                <div class="difference-item">
+                    <strong>٨. تعديل الدستور:</strong> إجراءات معقدة (2014) ← أسهل بنفوذ الرئيس (2022)
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
