@@ -89,9 +89,12 @@
     }
 
     /* burger button for mobile */
-    .nav-toggle {
-      display: none;
-    }
+    .nav-toggle{
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
 
     .nav-btn {
       display: none;
@@ -481,7 +484,7 @@
 
   <div class="nav-shell">
     <!-- burger (mobile) -->
-    <label class="nav-btn" for="nav-toggle">☰ Menu</label>
+    <label class="nav-btn" for="nav-toggle">☰ قائمة المحاور </label>
 
     <!-- desktop links -->
     <div class="nav-inner" aria-label="navigation">
